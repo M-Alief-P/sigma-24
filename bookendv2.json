@@ -1,0 +1,42 @@
+{
+    "bookendVersion": "v1.0",
+    "shareProviders": [
+        "facebook",
+        "twitter",
+        "email",
+        "whatsapp"
+    ],
+    "components": [{
+            "type": "heading",
+            "text": "More to read story"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more Visual Story SIGMAFACT",
+            "url": "https://sigma-24.firebaseapp.com/story-sigmafact",
+            "image": "https://sigma-24.firebaseapp.com/sigmafact/SIGMAFACT2.jpeg",
+            "category": "SIGMAFACT"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more about Kejuaraan SIGMA 24",
+            "url": "https://sigma-24.firebaseapp.com/story-kejuaraan.html",
+            "image": "https://sigma-24.firebaseapp.com/Kejuaraan/Kejuaraan%201.jpg",
+            "category": "Kejuaraan"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more about PESAT SIGMA 24",
+            "url": "https://sigma-24.firebaseapp.com/story-pesat",
+            "image": "https://sigma-24.firebaseapp.com/PESAT/PESAT%202%20Buatan%20Aishna.jpg",
+            "category": "PESAT"
+        },
+        {
+            "type": "cta-link",
+            "links": [{
+                "text": "Visual Story SIGMA 24",
+                "url": "https://sigma-24.firebaseapp.com/visual-story-sigma-24.html"
+            }]
+        }
+    ]
+}

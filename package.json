@@ -1,0 +1,28 @@
+{
+  "name": "sigma-24",
+  "version": "1.0.0",
+  "description": "a organization website in SMAN 24 Kabupaten Tangerang",
+  "main": "index.js",
+  "scripts": {
+    "test": "sigma-24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "muda-cerdas-berprestasi"
+  },
+  "keywords": [
+    "muda"
+  ],
+  "author": "sigma-24",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^7.14.1",
+    "firebase-functions": "^3.6.2",
+    "firebaseui": "^4.5.0",
+    "heroku": "^7.39.2",
+    "hubot": "^3.3.2",
+    "web-push": "^3.4.4"
+  }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGMA 24</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="./plugin/Instagram/sb-instagram.min.css">
+</head>
+
+
+<body>
+    <div class="header-bg">
+        <div class="site-branding">
+        </div>
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container box_1620">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html"><img src="./output-onlinejpgtools (3).png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-end">
+                                <li class="nav-item submenu dropdown">
+                                    <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a></li>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kejuaraan</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2014.html">Kejuaraan 2014</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2015.html">Kejuaraan 2015</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2016.html">Kejuaraan 2016</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2017.html">Kejuaraan 2017</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2018.html">Kejuaraan 2018</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2019.html">Kejuaraan 2019</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kejuaraan 2020.html">Kejuaraan 2020</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kegiatan</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2014.html">Kegiatan 2014</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2015.html">Kegiatan 2015</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2016.html">Kegiatan 2016</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2017.html">Kegiatan 2017</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2018.html">Kegiatan 2018</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2019.html">Kegiatan 2019</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kegiatan 2020.html">Kegiatan 2020</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kepengurusan SIGMA 24</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2014.html">Kepengurusan 2014</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2015.html">Kepengurusan 2015</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2016.html">Kepengurusan 2016</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2017.html">Kepengurusan 2017</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2018.html">Kepengurusan 2018</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2019.html">Kepengurusan 2019</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Kepengurusan 2020.html">Kepengurusan 2020</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+
+                            <ul class="navbar-right">
+                                <li class="nav-item">
+                                    <a href="register.html" class="button button-header bg">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <marquee> MUDA CERDAS BERPRESTASI </marquee>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        <main class="side-main">
+            <!--================ Hero sm Banner start =================-->
+            <section class="hero-banner mb-30px">
+                <div class="container">
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="hero-banner__img">
+                                <img class="img-fluid" src="img/banner/hero-banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 pt-5">
+                            <div class="hero-banner__content">
+                                <h1>SIGMA 24</h1>
+                                <p>Ekstrakurikuler SIGMA 24 bergerak di bidang penelitian dan karya ilmiah di SMAN 24 Kabupaten Tangerang</p>
+                                <a class="button bg" href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script data-ad-client="ca-pub-4786210224596431" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </section>
+            <!--================ Hero sm Banner end =================-->
+
+            <!--================ Feature section start =================-->
+            <section class="section-margin">
+                <div class="col-lg">
+                    <div class="home-row-head">
+                        <h2 class="heading">Peta SIGMA 24</h2>
+                        <small align="center">SMAN 24 Kabupaten Tangerang</small>
+                    </div>
+                    <div id="google-map col-lg" style="height: 450; position: relative;  overflow: hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8380061955045!2d106.57077851430955!3d-6.152444762017501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff0da25ebcb5%3A0xbbe7074fd04c52e!2sSMAN%2024%20Kab.Tangerang!5e0!3m2!1sid!2sid!4v1585376428168!5m2!1sid!2sid"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            <div id="dokumen"></div>
+                            <html>
+                            <head></head>
+                            <body></body>
+                            </html>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1 fusion-builder-column-12 fusion-one-full fusion-column-first fusion-column-last 1_1" style='margin-top:0px;margin-bottom:20px;'>
+                    <div class="fusion-column-wrapper" style="padding: 0px 0px 0px 0px;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;" data-bg-url="">
+                        <style type="text/css">
+                            @media only screen and (max-width:800px) {
+                                .fusion-title.fusion-title-13 {
+                                    margin-top: 10px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                            }
+                        </style>
+                        <div class="fusion-title title fusion-title-13 sep-underline sep-solid fusion-title-text fusion-title-size-two" style="border-bottom-color:#acaead;margin-top:10px;margin-bottom:15px;">
+                            <h2 class="title-heading-left" style="color:orangered; margin: 0;">INSTAGRAM</h2>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="google-map" style="height: 450; position: relative;  overflow: hidden;">
+                        <iframe src="https://www.instagram.com/embedd?/sigmaduaempat/" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            <div id="dokumen"></div>
+                            <html>
+                            <head></head>
+                        	<body></body>
+                        	</html>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1 fusion-builder-column-12 fusion-one-full fusion-column-first fusion-column-last 1_1" style='margin-top:0px;margin-bottom:20px;'>
+                    <div class="fusion-column-wrapper" style="padding: 0px 0px 0px 0px;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;" data-bg-url="">
+                        <style type="text/css">
+                            @media only screen and (max-width:800px) {
+                                .fusion-title.fusion-title-13 {
+                                    margin-top: 10px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                            }
+                        </style>
+                        <div class="fusion-title title fusion-title-13 sep-underline sep-solid fusion-title-text fusion-title-size-two" style="border-bottom-color:#acaead;margin-top:10px;margin-bottom:15px;">
+                            <h2 class="title-heading-left" style=" color: firebrick ; margin: 0;">
+                                GMAIL: <a href="mailto:sigmaduaempat@gmail.com">sigmaduaempat@gmail.com</a></h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="fusion-title title fusion-title-13 sep-underline sep-solid fusion-title-text fusion-title-size-two" style="border-bottom-color:#acaead;margin-top:10px;margin-bottom:15px;">
+                        <h2 class="title-heading-left" style=" color: rgb(255, 8, 8) ; margin: 0;">
+                            YouTube: <a href="https://www.youtube.com/channel/UCgyY6BngcAb7B7HOrad0hVw/featured">sigmaduaempat@gmail.com</a>
+                        </h2>
+                    </div>
+                    <div class="about__img col-xs col-lg">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            </ol>
+                            <div class="carousel-inner col-xs">
+                                <div class="carousel-item active">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/Qd-KAUKOLTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>SBK - Sehari Bersama KIR || After Movie || Jilid V</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/Navg_CpzBxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>SBK - Sehari Bersama KIR || After Movie || Jilid IV</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/EASuL0izTfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>Go Behind the Scene of Rutinitasi - SMAN 24 Kabupaten Tangerang</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/zFb9G_XN2tY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>#OHARA17 - Social Experiment - Guess the Food Experiment - SMAN 24 Kabupaten Tangerang</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/78z6IxxxW2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>"300%" - SHORT MOVIE SMAN 24 KAB TANGERANG - FESTIVAL FILM PENDEK #LOVESCIENCE #LIPI</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/Iz-PQYYNacs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>After Movie Kartini x Isra Mi'raj SMAN 24</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-12" width="560" height="315" src="https://www.youtube.com/embed/7tEsNnm243Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <caption>AVTER DOCUMENTATION MOVIE (TRIP TO TAMAN KOTA 2)</caption>
+                                    <button id="pipButton"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+            </section>
+
+        </main>
+    </div>
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area section-gap">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="widget contacts">
+                            <h4 class="widgetheading"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Contact Details
+                            </h4>
+                            <hr />
+                            <address style="color: white;">
+    							<strong style="color: white;">Address:</strong><br>
+    							<i class="fa fa-map-marker" style="color: white" aria-hidden="true"></i>
+    							&nbsp;Jl. Arwana Raya Pondok Permai Kel. Kutabaru Kec. Pasarkemis Kab. Tangerang
+    							Prov. Banten Indonesia
+    						</address>
+                            <p>
+                                <strong style="color: white;">Email:</strong><br>
+                                <i class="fa fa-envelope" style="color: white;" aria-hidden="true"></i> &nbsp;<a href="mailto:sigmaduaempat@gmail.com">sigmaduaempat@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="widget">
+                            <h4 class="widgetheading"><i class="fas fa-list-ul" aria-hidden="true"></i> &nbsp; Daftar Kegiatan SIGMA</h4>
+                            <hr />
+                            <p>
+                                <li><a href="Product.html">Product SIGMA</a></li>
+                                <li><a href="Kegiatan.html">Kegiatan SIGMA</a></li>
+                                <li><a href="Karya-Tulis-Ilmiah.html">Karya Tulis Ilmiah SIGMA</a></li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="widget">
+                            <h4 class="widgetheading"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;<img src="./logo-visual/Visual Story.jpg" aria-hidden="true" style="height: auto;"></h4>
+                            <hr />
+                            <p>
+                                <i class="fas fa-atom" aria-hidden="true" style="color: #ffffff;"></i>&nbsp;<a href="story-sigmafact.html">SIGMAFACT SIGMA 24</a>
+
+                            </p>
+                            <br />
+                            <p>
+                                <i class="fas fa-drafting-compass" style="color: #ffffff;"></i>&nbsp; / <i class="fas fa-video" style="color: #ffffff;"></i>&nbsp;<a href="story-pesat.html">PESAT SIGMA 24</a>
+                            </p>
+                            <br />
+                            <p>
+                                <i class="fas fa-trophy" style="color: #ffffff;"></i>&nbsp;<a href="story-kejuaraan.html">Kejuaraan SIGMA 24</a>
+                            </p>
+                            <br />
+                            <p>
+                                <i class="fas fa-calendar-alt" style="color: #ffffff;"></i>&nbsp;<a href="story-haribesar.html">Hari Besar SIGMA 24</a>
+                            </p>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget mx-auto"></div>
+                    <div class="footer-bottom row align-items-center text-center text-lg-center mx-auto">
+                        <p class="footer-text m-0 col-lg-8 col-md-12 mx-auto">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This Website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://sigma-24.firebaseapp.com" target="_blank">SIGMA 24</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                        <p class="_1zwi _1m7h align-content-lg-center mx-auto" style="color: white;">Ikuti kami</p>
+                        <a data-click-event="footer_social_ig" href="https://www.instagram.com/sigmaduaempat/" target="_blank" rel="noopener nofollow" data-lynx-mode="async">
+                            <img class="_6voz _7f2d img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.2365-6/34644309_198434704133910_8913002448616947712_n.png?_nc_cat=1&amp;_nc_sid=ad8a9d&amp;_nc_ohc=POBGvS7oy6cAX8GOPD5&amp;_nc_ht=scontent-sin6-1.xx&amp;oh=a6faf5dccae73219cef71ff784485e35&amp;oe=5EBC9BF0"
+                                alt="Ikuti kami di Instagram" style="width:24px; height:auto; display:inline; margin-right:20px;"></a>
+                        <a data-click-event="footer_social_youtube" href="https://www.youtube.com/channel/UCgyY6BngcAb7B7HOrad0hVw" target="_blank" rel="noopener nofollow" data-lynx-mode="asynclazy" data-lynx-uri="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fuser%2FFacebookDevelopers&amp;h=AT2J_MzkbRVrdbqA4pH6JZIRKCvXvFHmOjDZeQJnEH9XdkHdOkMrNLlE5nV45U9c2G-3YDbPc7CgaEYu-rIDRDTMitoj_owLjHxmcTfX2XMHKO-jmbJSmohzEPktBirdaKyQF2R3OWeVHew_ANr_og"><img class="_6voz _7f2d img" src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.2365-6/52876983_898439783662882_7410666143091785728_n.png?_nc_cat=1&amp;_nc_sid=ad8a9d&amp;_nc_ohc=Ec1Z_UKAiD8AX9NyPjw&amp;_nc_ht=scontent-sin6-1.xx&amp;oh=e09f34baa6c37460601c9b26b96b098d&amp;oe=5EBE8595"
+                                alt="Ikuti kami YouTube" style="width: auto; height:24px; display:inline;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <!-- ================ End footer Area ================= -->
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/b96e641f93.js" crossorigin="anonymous"></script>
+    <script src="./App.js"></script>
+    <script data-ad-client="ca-pub-4786210224596431" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#FF9800" data-apps="JTdCJTIyZW1haWwlMjI6JTIyc2lnbWFkdWFlbXBhdEBnbWFpbC5jb20lMjIlN0Q="></script>
+    <script type="text/javascript" id="cookieinfo" src="//cookieinfoscript.com/js/cookieinfo.min.js" data-bg="#645862" data-fg="#FFFFFF" data-link="#F1D600" data-cookie="CookieInfoScript" data-text-align="left" data-close-text="Got it!"></script>
+    <script>
+        // Hide button if Picture-in-Picture is not supported.
+        pipButton.hidden = !document.pictureInPictureEnabled;
+
+        pipButton.addEventListener('click', function() {
+            // If there is no element in Picture-in-Picture yet, let's request Picture
+            // In Picture for the video, otherwise leave it.
+            if (!document.pictureInPictureElement) {
+                video.requestPictureInPicture()
+                    .catch(error => {
+                        // Video failed to enter Picture-in-Picture mode.
+                    });
+            } else {
+                document.exitPictureInPicture()
+                    .catch(error => {
+                        // Video failed to leave Picture-in-Picture mode.
+                    });
+            }
+        });
+    </script>
+</body>
+
+</html>

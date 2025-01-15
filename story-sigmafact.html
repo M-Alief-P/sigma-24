@@ -1,0 +1,577 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGMAFACT | SIGMA 24</title>
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
+
+    <meta charset="utf-8">
+    <title>Story | SIGMA 24</title>
+    <link rel="canonical" href="./story-sigmafact.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <style amp-custom>
+        h1 {
+            color: red
+        }
+        
+        @font-face {
+            font-family: "AcuminPro";
+            src: url(https://cdn-production-assets-kly.akamaized.net/assets/fonts/liputan6/AcuminPro/AcuminPro.woff)
+        }
+        
+        .story__logo {
+            width: 28px;
+            margin-bottom: 10px
+        }
+        
+        .story__content__item {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            font-family: AcuminPro;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            color: #fff
+        }
+        
+        .story__tag {
+            font-family: AcuminPro;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3.2px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+            display: block
+        }
+        
+        .story__title {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            font-family: AcuminPro;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.17;
+            letter-spacing: normal;
+            color: #fff;
+            margin-bottom: 20px
+        }
+        
+        .story__title::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 4px;
+            background-color: #ff5722;
+            margin-top: 13px
+        }
+        
+        .story__credit {
+            font-family: AcuminPro;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: normal;
+            color: #8a8a8a;
+            display: block
+        }
+        
+        .story__publish-date {
+            font-family: AcuminPro;
+            font-size: 10px;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #8a8a8a
+        }
+        
+        .story__header {
+            width: calc(100% - 10px);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            background-color: #000
+        }
+        
+        .story__link {
+            height: 30px
+        }
+        
+        amp-story[standalone] {
+            height: calc(100% - 1000px)
+        }
+        
+        amp-img img {
+            object-fit: cover
+        }
+        
+        .story__background>* {
+            bottom: 0;
+            height: auto;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: auto
+        }
+        
+        .story__content__wrapper p {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            color: #fff
+        }
+        
+        .story--cover .story__content::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1));
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: 3
+        }
+        
+        .story--bottom .story__content__wrapper,
+        .story--cover .story__content__wrapper {
+            position: absolute;
+            z-index: 4;
+            bottom: 40px;
+            left: 25px;
+            width: calc(100% - 50px)
+        }
+        
+        .story--top .story__content__wrapper {
+            z-index: 4;
+            width: 100%
+        }
+        
+        .story--top .story__content::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .1)));
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1));
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: 3
+        }
+        
+        .story--top .story__content__wrapper::after,
+        .story--middle .story__content__wrapper::after {
+            content: "";
+            height: 4px;
+            background-color: #ff5722;
+            width: 20px;
+            display: block;
+            margin-top: 20px
+        }
+        
+        .story--bottom .story__content::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, 1)));
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, 1));
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: 3
+        }
+        
+        .story--bottom .story__content__wrapper::before {
+            content: "";
+            height: 4px;
+            background-color: #ff5722;
+            width: 20px;
+            display: block;
+            margin-bottom: 15px
+        }
+        
+        .story--middle .story__content__wrapper {
+            display: flex;
+            flex-direction: column;
+            z-index: 4;
+            justify-content: center
+        }
+        
+        .story--middle .story__content::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            background-color: rgba(0, 0, 0, .3);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            z-index: 3
+        }
+        
+        .story__content__nav {
+            position: fixed;
+            top: 17px;
+            left: 15px;
+            height: 30px;
+            z-index: 1000000
+        }
+        
+        .btn-back {
+            font-family: AcuminPro;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            line-height: 1.3;
+            width: 38px
+        }
+        
+        .btn-back::before {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-repeat: no-repeat;
+            margin-right: 8px
+        }
+        
+        amp-sidebar#sidebar {
+            height: 100%
+        }
+        
+        .sidebar-header {
+            background-color: #2d2e31;
+            width: 100%;
+            display: flex;
+            height: 10%
+        }
+        
+        .sidebar-logo {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            padding-right: 15px;
+            flex-direction: row-reverse;
+            align-items: center
+        }
+        
+        .close-sidebar {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        .close-sidebar:focus {
+            box-shadow: none;
+            outline: 0
+        }
+        
+        .amp-sidebar#sidebar {
+            width: 100%
+        }
+        
+        .sidebar {
+            padding-right: 15px;
+            margin: 0
+        }
+        
+        .sidebar>li {
+            list-style: none
+        }
+        
+        .sidebar a {
+            text-decoration: none;
+            padding-right: 15px
+        }
+        
+        li.sidebar-list-title__vs {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            justify-content: flex-end
+        }
+        
+        .sidebar a {
+            text-decoration: none;
+            font-family: AcuminPro;
+            font-size: 16px;
+            line-height: 1;
+            color: #fff;
+            margin-top: 4px
+        }
+        
+        li.sidebar-list-title__kanal {
+            border-top: 1px solid #3c3d42;
+            padding-top: 21px;
+            padding-bottom: 21px
+        }
+        
+        li.sidebar-list-menu {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end
+        }
+        
+        img.sidebar-list-icon {
+            transform: translateY(4px)
+        }
+        
+        .sidebar-list {
+            background-color: #2d2e31;
+            width: 100%;
+            float: right;
+            overflow: auto;
+            height: 90%
+        }
+        
+        a.sidebar-title__kanal-text {
+            font-family: AcuminPro;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            padding-right: 0
+        }
+        
+        li {
+            text-align: right
+        }
+        
+        dropdown-menushow {
+            display: block;
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Article headline",
+            "image": [
+                "thumbnail1.jpg"
+            ],
+            "datePublished": "2015-02-05T08:00:00+08:00"
+        }
+    </script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script src="https://kit.fontawesome.com/b96e641f93.js" crossorigin="anonymous"></script>
+    <!-- AMP Analytics -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+</head>
+
+
+<body>
+    <amp-story standalone title="Story SIGMA 24" publisher="SIGMA 24" publisher-logo-src="./sigmafact/SIGMAFACT1.jpg" poster-portrait-src="./sigmafact/SIGMAFACT1.jpg">
+        <amp-story-page id="my-first-page">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="./sigmafact/SIGMAFACT2.jpeg" width="900px" height="1400px">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-page id="my-second-page">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="./sigmafact/SIGMAFACT3.jpg" width="500px" height="1600px">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-page id="my-tree-page">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="./sigmafact/SIGMAFACT4.jpg" width="900" height="1600">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-page id="my-four-page">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="./sigmafact/SIGMAFACT5.jpg" width="900" height="1600">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-page id="my-five-page">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="./sigmafact/SIGMAFACT1.jpg" width="900px" height="1400px">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-58PMC8F&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+        <amp-sidebar id="sidebar" layout="nodisplay">
+            <div class="sidebar-header">
+                <div role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0" class="close-sidebar">
+                    <amp-img height="20px" width="20px" class="sidebar-close-img" src="https://preview-kly.akamaized.net/liputan6/visualstories/sidebar-icon-close.svg" />
+                </div>
+                <div class="sidebar-logo">
+                    <a href="https://sigma-24.firebase.com">
+                        <amp-img width="160px" height="31px" class="sidebar-logo-img" src="https://sigma-24.firebaseapp.com/img/clients-logo/output-onlinejpgtools%20(2).png" />
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-list">
+                <ul class="sidebar">
+                    <li class="sidebar-list-title__vs"><a href="https://sigma-24.firebaseapp.com">Home</a>
+                        <amp-img width="24px" height="24px" class="sidebar-list-icon" src="https://preview-kly.akamaized.net/liputan6/icon-home.png" />
+                    </li>
+                    <li class="sidebar-list-title__vs"><a href="https://sigma-24.firebaseapp.com/stories SIGMA 24.html">Visual Stories</a>
+                        <amp-img width="24px" height="24px" class="sidebar-list-icon" src="https://preview-kly.akamaized.net/liputan6/visualstories/sidebar-boundary.svg" />
+                    </li>
+                    <hr />
+                    <li class="nav-item submenu dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kejuaraan<i
+								class="sidebar-list-title__vs fas fa-trophy"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2014.html">Kejuaraan 2014</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2015.html">Kejuaraan 2015</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2016.html">Kejuaraan 2016</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2017.html">Kejuaraan 2017</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2018.html">Kejuaraan 2018</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2019.html">Kejuaraan 2019</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kejuaraan 2019.html">Kejuaraan 2019</a></li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li class="nav-item submenu dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kegiatan</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2014.html">Kegiatan 2014</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2015.html">Kegiatan 2015</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2016.html">Kegiatan 2016</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2017.html">Kegiatan 2017</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2018.html">Kegiatan 2018</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2019.html">Kegiatan 2019</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Kegiatan 2020.html">Kegiatan 2020</a></li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li class="nav-item submenu dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kepengurusan SIGMA 24</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2014.html">Kepengurusan 2014</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2015.html">Kepengurusan 2015</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2016.html">Kepengurusan 2016</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2017.html">Kepengurusan 2017</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2018.html">Kepengurusan 2018</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2019.html">Kepengurusan 2019</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Kepengurusan 2020.html">Kepengurusan 2020</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="navbar-center mx-auto">
+                    <li class="nav-item mx-auto">
+                        <button style="position:relative; padding: 12px 40px; background-color: white; border-color: none; color: #ff5722; border-color:white; color:white;"><a
+								href="register.html">Sign Up</a></button>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </amp-sidebar>
+        <amp-story-bookend id="last-story" src="bookendv1.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+</body>
+
+</html>

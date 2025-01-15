@@ -1,0 +1,42 @@
+{
+    "bookendVersion": "v1.0",
+    "shareProviders": [
+        "facebook",
+        "twitter",
+        "email",
+        "whatsapp"
+    ],
+    "components": [{
+            "type": "heading",
+            "text": "More to read story"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more about Hari Besar",
+            "url": "https://sigma-24.firebaseapp.com/story-haribesar.html",
+            "image": "https://sigma-24.firebaseapp.com/Hari%20Besar/Hari%20Guru.jpg",
+            "category": "Hari Besar"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more about PESAT SIGMA 24",
+            "url": "https://sigma-24.firebaseapp.com/story-pesat",
+            "image": "https://sigma-24.firebaseapp.com/PESAT/PESAT%202%20Buatan%20Aishna.jpg",
+            "category": "PESAT"
+        },
+        {
+            "type": "landscape",
+            "title": "Learn more about Kejuaraan SIGMA 24",
+            "url": "https://sigma-24.firebaseapp.com/story-kejuaraan.html",
+            "image": "https://sigma-24.firebaseapp.com/Kejuaraan/Kejuaraan%201.jpg",
+            "category": "Kejuaraan"
+        },
+        {
+            "type": "cta-link",
+            "links": [{
+                "text": "Visual Story SIGMA 24",
+                "url": "https://sigma-24.firebaseapp.com/visual-story-sigma-24.html"
+            }]
+        }
+    ]
+}
